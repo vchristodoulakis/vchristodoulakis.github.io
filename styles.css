@@ -14,6 +14,9 @@ ul {
   top: 0;
   width: 100%;
   margin-left: -8px;
+  display:flex;
+  z-index:1000;
+  justify-content: center;
   border-radius: 0px 0px 25px 25px;
 }
 
@@ -37,6 +40,9 @@ ul {
 .active {
   background-color: #04AA6D;
     border-radius: 10px 10px 10px 10px;
+}
+.content {
+	margin-top: 50px;
 }
 #main {
  max-width: 500px;
