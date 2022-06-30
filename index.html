@@ -2,12 +2,93 @@
 
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="styles.css">
   <meta charset="utf-8">
-  <title>Embedded Analytics with Tableau</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+var isShown=false;
+$(document).ready(function(){
+  $("#btn").click(function(){
+    if(isShown){
+		$("#table").hide();
+		$("#btn").html("Show Grid");
+	}else{
+		$("#table").show();
+		$("#btn").html("Hide Grid");
+	}
+	isShown=!isShown;
+  });
+});
+</script>
 </head>
 <body>
-   This is where the dashboard will go.
-   {{content}}
-   <div class='tableauPlaceholder' id='viz1656524675011' style='position: relative'><noscript><a href='#'><img alt='Sheet 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TestWorkbook_16565240851600&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TestWorkbook_16565240851600&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Te&#47;TestWorkbook_16565240851600&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1656524675011');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<ul class="nav">
+<li><a class="active" href="index.html">Home</a></li>
+  <li><a href="myprofile.html">My profile</a></li>
+  <li><a href="svg.html">Animations</a></li>
+  <li><a href="credits.html">Credits</a></li>  
+</ul>
+<div id="main1">
+
+<h1 style="width: 700px!important;">Pandemic And Gas Relation</h2>
+<div style="border-style: groove;width: 700px!important;">
+	<img style="margin-right: 10px;margin-bottom: 10px;" src="covid-gas_1.png" width="700" height="500" alt="MDN">
+	<button id="btn" style="margin-bottom: 10px;">Show Grid</button>
+	<table id="table" style="display:none;">
+  <tr>
+    <th>Category</th>
+    <th>January 2020</th>
+    <th>February 2020</th>
+	<th>March 2020</th>
+	<th>April 2020</th>
+	<th>May 2020</th>
+	<th>June 2020</th>
+	<th>July 2020</th>
+	<th>August 2020</th>
+  </tr>
+  <tr>
+    <td>Gasoline</td>
+    <td>2.3</td>
+    <td>-6.4</td>
+	<td>-20.2</td>
+	<td>-53.0</td>
+	<td>45.0</td>
+	<td>37.1</td>
+	<td>9.7</td>
+	<td>-2.7</td>
+  </tr>
+  <tr>
+    <td>Diesel Fuel</td>
+    <td>-7.2</td>
+    <td>-9.9</td>
+	<td>-12.2</td>
+	<td>-27.2</td>
+	<td>-12.4</td>
+	<td>27.3</td>
+	<td>31.5</td>
+	<td>5.9</td>
+  </tr>
+  <tr>
+    <td>Jet fuel</td>
+    <td>4.6</td>
+    <td>-18.9</td>
+	<td>-14.5</td>
+	<td>-48.6</td>
+	<td>-6.8</td>
+	<td>51.7</td>
+	<td>15.0</td>
+	<td>1.5</td>
+  </tr>
+</table>
+	<hr>
+	<p style="width: 700px!important;"/>	
+	This particular graph seems really important since it shows the effect  that the pandemic had in global economy. There are 3 different color graph representations that show the variance of the price of three different products compared to dates between January of 2020 and August of the same year. The blue color represents gas prices, the red the price of the oil and the light blue the price of aircraft fuel. 
+As we can see, from the beginning of the covid pandemic, every one of this type of fules has been affected( some of them more ,some of them less ), like diesel, as an example, which continued to be used from professional vehicles( ambulances, etc ).
+We can also point out a huge drop during April since 90% of the US population was on lockdown so the gas demands was 37% lower. After the end of it, and since the demand was higher and as such the price increased as well.
+	</p>
+</div>
+</div>
 </body>
 </html>
