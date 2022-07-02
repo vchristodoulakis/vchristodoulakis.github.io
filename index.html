@@ -1,54 +1,93 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-var isShown=false;
-$(document).ready(function(){
-  $("#btn").click(function(){
-    if(isShown){
-		$("#table").hide();
-		$("#btn").html("Show Grid");
-	}else{
-		$("#table").show();
-		$("#btn").html("Hide Grid");
-	}
-	isShown=!isShown;
-  });
-});
-</script>
+	<title>Home</title>
+	<link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+	<script>
+		var isShown = false;
+		$(document).ready(function () {
+			$("#btn").click(function () {
+				if (isShown) {
+					$("#table").hide();
+					$("#btn").html("Show Grid");
+				} else {
+					$("#table").show();
+					$("#btn").html("Hide Grid");
+				}
+				isShown = !isShown;
+			});
+		});
+	</script>
 </head>
+
 <body>
 	<ul class="nav">
-		<li><a  class="active"  href="index.html">Home</a></li>
+		<li><a class="active" href="index.html">Home</a></li>
 		<li><a href="eu_visualization.html">General EU Visualizations</a></li>
-		  <li><a href="uk_visualization.html">UK Visualizations</a></li>
-		  <li><a  class="active" href="video.html">Presentation</a></li>
-		  <li><a href="credits.html">Credits</a></li>  
+		<li><a href="uk_visualization.html">UK Visualizations</a></li>
+		<li><a href="video.html">Presentation</a></li>
+		<li><a href="credits.html">Credits</a></li>
+	</ul>
+	<div id="main1" class="content">
+		<h1 style="width: 700px!important;">The reasons and the science behind car accidents</h1>
+		<hr>
+		<h3>Abstract</h3>
+		<p style="width: 700px!important;">
+			In 2022 the number one cause of death for the young people are still the car accidents. Using visualization
+			analysis, the project aims to shed light to the real causes behind it. This will be done via a science
+			backed model in order to have a better chance in solving this problem while also providing to everyone a
+			clear visual analysis of the reasons and their correlations.
+		</p>
+		<h3>Details</h3>
+		<p style="width: 700px!important;">
+			This project tries to explore using two different datasets, to figure out reasons and causes of the many
+			accidents happening, while also trying to find a trend of the casualties. and different parameters affecting
+			those accidents.
+		</p>
+		<p style="width: 700px!important;">
+			The first dataset shows the distribution of fatal accident all over Europe. We observe that European
+			countries fatal accidents number is inverse proportion to their GDP <a href="credits.html#source_1">[1]</a>, with few exceptions like Russia, in
+			which other factors come to play like alcohol consumption <a href="credits.html#source_2">[2]</a>, violent crimes rate <a href="credits.html#source_3">[3]</a>, etc.
+		</p>
+		<p style="width: 700px!important;">
+			To further investigate this issue, the second dataset concerns traffic accidents in the UK. This country was
+			selected due to the economic development the country has <a href="credits.html#source_1">[1]</a>, the volume of road accessibility, quality and
+			usage [4] and finally due to the high number of data available.
+		</p>
+		<p style="width: 700px!important;">
+			The UK dataset dashboard has the following graphs:
+		<ul>
+			<li>Accidents Per Year Quarter</li>
+			<li>Accidents Per Sex</li>
+			<li>Accidents Per Day of Week</li>
+			<li>Casualties Per Age</li>
 		</ul>
-<div id="main1"class="content">
-<h1 style="width: 700px!important;">Lorem Ipsum</h1>
-	<hr>
-	<p style="width: 700px!important;"/>	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu tortor turpis. Quisque luctus nunc at diam efficitur, in condimentum mauris feugiat. Nam vehicula venenatis felis, vel aliquet lorem cursus sed. Suspendisse eget fringilla ex, at mattis risus. Aenean commodo non tellus a sollicitudin. Mauris malesuada et magna varius feugiat. Nullam felis ligula, dictum eu fermentum ac, posuere vel odio. Nulla consectetur ligula id pellentesque interdum. Aliquam a arcu et quam feugiat efficitur nec eu erat. Phasellus lorem diam, rhoncus consequat augue id, dictum laoreet ex. Aenean ipsum tellus, euismod vitae dapibus in, finibus a est. Cras scelerisque erat turpis, ut tincidunt diam vestibulum quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras at rutrum risus. Maecenas sodales augue tortor, vitae venenatis tellus auctor vel. Nulla nisl lacus, congue lacinia finibus vulputate, sollicitudin eget magna.
-</p>
-<p>
-Pellentesque a ultrices lacus. Sed vel vulputate nisl. Fusce dignissim nunc eget nisl pretium, at mattis tortor lobortis. Vivamus in ullamcorper lectus, et rhoncus nisi. Pellentesque dapibus feugiat augue eu bibendum. Etiam consequat posuere ante vel pulvinar. Vivamus dictum lobortis quam, at fringilla dui condimentum volutpat. Curabitur consectetur, sem ac ullamcorper sollicitudin, massa purus dapibus urna, ut iaculis neque diam at purus. Maecenas pulvinar lacus non mauris dapibus vulputate non sed leo. Proin eu malesuada ipsum. Cras malesuada porta risus vitae faucibus. Sed massa eros, vehicula sit amet finibus vitae, dictum at purus.
-</p>
-<p>
-Integer finibus tempor neque, nec lacinia felis viverra vitae. Praesent in augue felis. Nam interdum quam mollis, maximus nisl nec, imperdiet justo. Vestibulum ultricies feugiat dolor, ut iaculis orci malesuada consequat. Quisque aliquet scelerisque laoreet. Duis rhoncus nibh sit amet augue tincidunt, at dapibus odio volutpat. Aenean et tortor tristique, ornare massa vitae, sodales magna. Sed sollicitudin ipsum in erat cursus, eget blandit felis cursus. Nam id turpis aliquet libero euismod posuere sit amet at justo. In hac habitasse platea dictumst.
-</p>
-<p>
-In dignissim bibendum convallis. Pellentesque vehicula tortor nulla, id volutpat orci faucibus id. Donec gravida quam vitae arcu malesuada aliquam. Suspendisse in velit id est consequat hendrerit id a arcu. Sed vulputate tristique est, ut aliquam purus accumsan ut. Quisque molestie tellus at lacus luctus faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis lorem, id fermentum lorem convallis eget. In interdum pellentesque suscipit. Phasellus congue quam id risus tristique porta. Vestibulum mollis sagittis velit ac ullamcorper. Proin quis augue feugiat, condimentum nulla sit amet, lacinia ante. Donec varius mollis enim, in ultrices metus pretium ut.
-</p>
-<p>
-Sed neque orci, semper ut volutpat nec, cursus non elit. Mauris tincidunt sollicitudin tristique. Nunc congue nisl nibh, ac tempor turpis pellentesque in. Sed id velit quis eros eleifend volutpat. Mauris aliquet, arcu eget imperdiet elementum, ante dolor vestibulum dui, nec ultrices mauris ante sit amet sapien. Etiam laoreet sollicitudin neque sit amet faucibus. Nullam in maximus lectus.
-	</p>
-</div>
+		</p>
+		<p style="width: 700px!important;">
+			From the analysis done using these graphs, we can make the following inferences:
+		<ul>
+			<li>During the start of the COVID-19 pandemic, there was a drop to the rate of accidents. This drop is
+				observed for the 2020 Q1, reaching the lowest point during the 2020 Q2. Obviously, due to the quarantine
+				implemented in the UK starting April, the low volume of car circulation prevented traffic accidents from
+				happening.</li>
+			<li>Men are more potent to traffic accidents, due to the fact that they are reported to commit violent acts
+				significantly more frequently than women <a href="credits.html#source_5">[5]</a>. Also, this supports studies that women have a safer road
+				behavior than men do <a href="credits.html#source_6">[6]</a>.</li>
+			<li>Friday and Saturday are the weekdays with the highest volume of traffic accidents. As we can assume,
+				those two days are the days when most people have plans for their entertainment, usually involving
+				alcohol consumption. Thus, those days have the most risk of fatal accidents, as supported already by
+				other studies <a href="credits.html#source_7">[7]</a>.</li>
+			<li>Finally, the most careless ages are found to be between 18-30. As we can assume, during those ages a lot of people go out more often, due to having less responsibilities and often due to the immaturity of the drivers and lack of experience. This is also supported by studies that support this conclusion <a href="credits.html#source_8">[8]</a>.</li>
+		</ul>
+		</p>
+	</div>
 </body>
+
 </html>

@@ -1,4 +1,8 @@
-ul {
+body {
+  background-color: #6c6666;
+}
+
+.nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,6 +20,7 @@ ul {
   width: 100%;
   margin-left: -8px;
   display:flex;
+  z-index:1000;
   justify-content: center;
   border-radius: 0px 0px 25px 25px;
 }
@@ -79,4 +84,8 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.tableauPlaceholder {
+  margin-left:-15%;
 }
