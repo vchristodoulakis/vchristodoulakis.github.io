@@ -8,29 +8,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-	  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-	  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-	  crossorigin="anonymous"></script>
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-	  integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-	  crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<script>
-		var isShown = false;
-		$(document).ready(function () {
-			$("#btn").click(function () {
-				if (isShown) {
-					$("#table").hide();
-					$("#btn").html("Show Grid");
-				} else {
-					$("#table").show();
-					$("#btn").html("Hide Grid");
-				}
-				isShown = !isShown;
-			});
-		});
-	</script>
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -47,28 +32,29 @@
 		<h3>Abstract</h3>
 		<p style="width: 700px!important;">
 			In 2022 the number one cause of death for the young people are still the car accidents. Using visualization
-			analysis, the project aims to shed light to the real causes behind it. This will be done via a science
+			analysis, this project aims to shed light to the real causes behind it. This will be done via a science
 			backed model in order to have a better chance in solving this problem while also providing to everyone a
 			clear visual analysis of the reasons and their correlations.
 		</p>
 		<h3>Details</h3>
 		<p style="width: 700px!important;">
-			This project tries to explore using two different datasets, to figure out reasons and causes of the many
-			accidents happening, while also trying to find a trend of the casualties. and different parameters affecting
-			those accidents.
+			This project tries to explore, using two different datasets, the reasons and causes of all these accidents,
+			while also trying to find a trend of the casualties and accidents in combination with all the different
+			parameters affecting those.
 		</p>
 		<p style="width: 700px!important;">
-			The first dataset shows the distribution of fatal accident all over Europe. We observe that European
-			countries fatal accidents number is inverse proportion to their GDP <a href="credits.html#source_1">[1]</a>,
-			with few exceptions like Russia, in
-			which other factors come to play like alcohol consumption <a href="credits.html#source_2">[2]</a>, violent
+			The first dataset shows the distribution of fatal accidents all over Europe. We observe that European
+			countries fatal accidents number is an inverse proportion to their GDP <a
+				href="credits.html#source_1">[1]</a>,with few exceptions like Russia, in which other factors come to
+			play such as alcohol consumption <a href="credits.html#source_2">[2]</a>, violent
 			crimes rate <a href="credits.html#source_3">[3]</a>, etc.
 		</p>
 		<p style="width: 700px!important;">
-			To further investigate this issue, the second dataset concerns traffic accidents in the UK. This country was
-			selected due to the economic development the country has <a href="credits.html#source_1">[1]</a>, the volume
-			of road accessibility, quality and
-			usage [4] and finally due to the high number of data available.
+			In order to further investigate this issue, the second dataset is specialized in traffic accidents in the
+			UK. This country was selected on purpose due to the high economic development <a
+				href="credits.html#source_1">[1]</a>(in correlation with the previous observation), the volume of road
+			accessibility, quality and usage <a href="credits.html#source_4">[4]</a> and finally due to the high number
+			of data available.
 		</p>
 		<p style="width: 700px!important;">
 			The UK dataset dashboard has the following graphs:
@@ -80,19 +66,19 @@
 		</ul>
 		</p>
 		<p style="width: 700px!important;">
-			From the analysis done using these graphs, we can make the following inferences:
+			From the analysis of the above graphs and visualizations, we can make the following inferences:
 		<ul>
-			<li>During the start of the COVID-19 pandemic, there was a drop to the rate of accidents. This drop is
-				observed for the 2020 Q1, reaching the lowest point during the 2020 Q2. Obviously, due to the quarantine
-				implemented in the UK starting April, the low volume of car circulation prevented traffic accidents from
-				happening.</li>
+			<li>During the start of the COVID-19 pandemic, there was a drop in the rate of accidents. This drop is
+				observed from the 2020 Q1, reaching the lowest point during the 2020 Q2. Obviously, this occurred due to
+				the quarantine that was implemented in the UK starting on April in which the low volume of car
+				circulation lowered by a lot the chances of traffic accidents happening.</li>
 			<li>Men are more potent to traffic accidents, due to the fact that they are reported to commit violent acts
 				significantly more frequently than women <a href="credits.html#source_5">[5]</a>. Also, this supports
 				studies that women have a safer road
 				behavior than men do <a href="credits.html#source_6">[6]</a>.</li>
 			<li>Friday and Saturday are the weekdays with the highest volume of traffic accidents. As we can assume,
 				those two days are the days when most people have plans for their entertainment, usually involving
-				alcohol consumption. Thus, those days have the most risk of fatal accidents, as supported already by
+				alcohol consumption. Thus, these days have the most risk of fatal accidents, as supported already by
 				other studies <a href="credits.html#source_7">[7]</a>.</li>
 			<li>Finally, the most careless ages are found to be between 18-30. As we can assume, during those ages a lot
 				of people go out more often, due to having less responsibilities and often due to the immaturity of the
